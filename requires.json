@@ -1,0 +1,17 @@
+{
+  "runtime_credentials": false,
+  "permissions": {
+    "allow_bash": [
+      "python3 scripts/internal_linking_finder.py *",
+      "python3 -m pip install -r requirements.txt",
+      "cat *",
+      "ls *"
+    ],
+    "deny_bash": [
+      "rm -rf *"
+    ]
+  },
+  "mcps": [],
+  "credentials": [],
+  "notes": "Plugin makes outbound HTTP GET requests only to the user-provided domain (homepage, sitemap, category pages, blog posts). No API keys, no MCP servers, no LLM API calls. Pure crawling + parsing via requests + beautifulsoup4 + lxml. CSV output written to <plugin>/output/ by default, or to --output PATH."
+}
