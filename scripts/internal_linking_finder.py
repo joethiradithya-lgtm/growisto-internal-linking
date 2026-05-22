@@ -615,7 +615,7 @@ def main():
         type=str,
         default=None,
         metavar="PATH",
-        help="Custom output CSV path (default: <plugin>/output/{domain}-internal-linking-{date}.csv)",
+        help="Custom output CSV path (default: <plugin>/Outputs/{domain}-internal-linking-{date}.csv)",
     )
     args = parser.parse_args()
 
@@ -634,7 +634,7 @@ def main():
     # Output file path
     domain_name = urlparse(domain).netloc.replace("www.", "")
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(script_dir, "..", "output")
+    output_dir = os.path.join(script_dir, "..", "Outputs")
     os.makedirs(output_dir, exist_ok=True)
 
     if args.output:

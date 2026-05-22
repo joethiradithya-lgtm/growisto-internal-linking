@@ -1,6 +1,6 @@
 ---
 name: generate-report
-description: Score, deduplicate, filter, and export internal linking recommendations as a CSV to the output/ folder. Final phase of internal linking analysis.
+description: Score, deduplicate, filter, and export internal linking recommendations as a CSV to the Outputs/ folder. Final phase of internal linking analysis.
 when_to_use: Use after /analyze-blogs and /analyze-footers have produced raw opportunity lists. Combines, scores, filters, and exports the final deliverable.
 argument-hint: [domain-name]
 ---
@@ -68,7 +68,7 @@ Sort the final list by:
 
 ### 6. Export CSV
 
-Save to: `output/{domain}-internal-linking-{YYYY-MM-DD}.csv`
+Save to: `Outputs/{domain}-internal-linking-{YYYY-MM-DD}.csv`
 
 CSV columns:
 
@@ -94,7 +94,7 @@ Use the `Write` tool to save the CSV file. Ensure:
 After saving, display to the user:
 
 ```
-REPORT SAVED: output/{filename}.csv
+REPORT SAVED: Outputs/{filename}.csv
 
 Total recommendations: {count}
   Blog opportunities: {count}
@@ -117,7 +117,7 @@ Top target pages (most recommended):
 - Maximum 2 recommendations per source page (unless user specified otherwise)
 - Never include "Low confidence" matches in the final CSV
 - Never include self-links
-- CSV must be saved to `output/` — never save to any other location
+- CSV must be saved to `Outputs/` — never save to any other location
 - If the final filtered list has 0 recommendations, save an empty CSV with headers only and explain why no opportunities were found
 - Column order must be exactly: Opportunity Page URL, Anchor Text, Location on Page, Target URL
 

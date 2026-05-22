@@ -29,7 +29,7 @@ Present a brief numbered plan to the user showing the phases you will execute:
 3. Scan blog posts for unlinked keyword opportunities
 4. Scan category page footer/SEO content for cross-linking opportunities
 5. Score, filter, and deduplicate all matches
-6. Export final recommendations as CSV to `output/`
+6. Export final recommendations as CSV to `Outputs/`
 
 Wait for user confirmation before executing.
 
@@ -61,4 +61,4 @@ After generating the report, present:
 - Never skip the plan confirmation in Step 2
 - If a phase finds 0 results, report it and continue — do not silently skip
 - If WebFetch fails for a page, log it and continue with other pages
-- All output must be saved to the `output/` folder
+- All output must be saved to the `Outputs/` folder
