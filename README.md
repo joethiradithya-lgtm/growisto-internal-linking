@@ -80,7 +80,7 @@ python3 scripts/internal_linking_finder.py https://www.livguard.com --delay 2.0
 
 # Custom output path (default: <plugin>/output/{domain}-internal-linking-{date}.csv)
 python3 scripts/internal_linking_finder.py https://www.livguard.com \
-    --output /Users/joe/Downloads/livguard-links.csv
+    --output ./Outputs/livguard-links.csv
 ```
 
 ## Output format

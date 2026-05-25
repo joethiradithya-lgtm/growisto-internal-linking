@@ -1,8 +1,17 @@
 ---
 name: analyze-domain
+version: "0.2.0"
 description: Run a full internal linking opportunity analysis for a website. Discovers pages, maps commercial keywords, scans blogs and footers, and outputs a CSV of linking recommendations.
+trigger: "find internal linking opportunities for"
 when_to_use: Use when the user provides a domain URL and wants to find internal linking opportunities. This is the main entry point — it orchestrates all other skills in sequence.
 argument-hint: [domain-url]
+tags:
+  - seo
+  - internal-linking
+  - crawl
+category: seo
+feedback_path: feedback/
+output_format: "CSV with 4 columns — Opportunity Page URL, Anchor Text, Location on Page, Target URL"
 ---
 
 # Full Internal Linking Analysis

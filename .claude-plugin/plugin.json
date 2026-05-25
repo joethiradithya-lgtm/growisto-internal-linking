@@ -1,6 +1,6 @@
 {
   "name": "growisto-internal-linking",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Find internal linking opportunities for a domain. Crawls the site, builds a commercial keyword → URL map, scans blog body text and category footer SEO blocks for un-linked mentions of those keywords, and outputs a CSV of ‘add a link here pointing to there’ recommendations (max 2 per source page).",
   "author": {
     "name": "Growisto SEO Team",
